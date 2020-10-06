@@ -1,66 +1,30 @@
 {
-  "name": "roblox-test-minigame",
+  "name": "project",
   "tree": {
     "$className": "DataModel",
-    "HttpService": {
-      "$className": "HttpService",
-      "$properties": {
-        "HttpEnabled": true
-      }
-    },
-    "Lighting": {
-      "$className": "Lighting",
-      "$properties": {
-        "Brightness": 2.0,
-        "GlobalShadows": true,
-        "Technology": "Voxel",
-        "Ambient": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "Outlines": false
-      }
-    },
     "ReplicatedStorage": {
       "$className": "ReplicatedStorage",
-      "Source": {
-        "$path": "src"
-      }
+      "$ignoreUnknownInstances": true,
+      "$path": "src/ReplicatedStorage"
     },
-    "SoundService": {
-      "$className": "SoundService",
-      "$properties": {
-        "RespectFilteringEnabled": true
-      }
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "$ignoreUnknownInstances": true,
+      "$path": "src/ServerScriptService"
     },
-    "Workspace": {
-      "$className": "Workspace",
-      "$properties": {
-        "FilteringEnabled": true
+    "ServerStorage": {
+      "$className": "ServerStorage",
+      "$ignoreUnknownInstances": true,
+      "$path": "src/ServerStorage"
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "$ignoreUnknownInstances": true,
+        "$path": "src/StarterPlayer/StarterPlayerScripts"
       },
-      "Baseplate": {
-        "$className": "Part",
-        "$properties": {
-          "Anchored": true,
-          "Position": [
-            0.0,
-            -10.0,
-            0.0
-          ],
-          "Color": [
-            0.38823,
-            0.37254,
-            0.38823
-          ],
-          "Size": [
-            512.0,
-            20.0,
-            512.0
-          ],
-          "Locked": true
-        }
-      }
+      "$ignoreUnknownInstances": true
     }
   }
 }
